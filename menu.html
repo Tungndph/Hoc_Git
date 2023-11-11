@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            margin: 0 auto;
+            width: 1475px;
+            background-color: #CCC;
+        }
+
+        .header {
+            width: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 90px;
+        }
+        .header a{
+            font-weight: bold;
+        }
+        .header a:hover{
+            text-decoration: underline;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .content {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .content img {
+            border-radius: 5px;
+            box-shadow: 3px 3px #ccc;
+            /* box-sizing: 1px 1px 1px; */
+        }
+
+        .left {
+            border-right: 3px solid #ccc;
+            width: 15%;
+            margin-top: 25px;
+            font-weight: 600;
+            padding-right: 20px;
+        }
+        .all{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .left ul li{
+            margin-bottom: 20px;
+        }
+        .left a:hover{
+            color: #FF4A11;
+        }
+        .right {
+            margin-top: 25px;
+            width: 85%;
+            padding: 0 40px;
+        }
+
+        .text {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .pr {
+            margin-top: 15px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .sell {
+            margin: 10px 0;
+        }
+
+        .sell a {
+            font-weight: 600;
+            font-size: 15px;
+
+        }
+        .sell a:hover{
+            color: #FF4A11;
+
+        }
+        .sell p {
+            color: #848282;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        footer {
+            color: #fff;
+            background-color: #000000D9;
+            margin-top: 50px;
+            font-size: 13px;
+        }
+
+        .ftn {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .bot {
+            padding-bottom: 50px;
+        }
+
+        .ft {
+            padding-top: 25px;
+            display: grid;
+            width: 300px;
+
+        }
+
+        .ft a {
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        hr {
+            margin: 20px auto;
+            width: 1200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="header">
+            <li><a href=""><img src="img/logo coffe.png" alt="" width="100px"></a></li>
+            <li><a href="http://127.0.0.1:5500/caphe.html">Cà phê</a></li>
+            <li><a href="">Trà</a></li>
+            <li><a href="" style="color: #FF4A11;">Menu</a></li>
+            <li><a href="">Chuyện Nhà</a></li>
+            <li><a href="">Tài Khoản</a></li>
+        </ul>
+
+    </header>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li class="all"><a href="">Tất cả</a></li>
+                <li><a href="">Cà phê</a></li>
+                <li><a href="">Trà</a></li>
+                <li><a href="">Cloud</a></li>
+                <li><a href="">Hi-Tea</a></li>
+                <li><a href="">Trà Xanh - Sô Cô La</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="text">
+                <p>Cà Phê Highlight</p>
+            </div>
+            <div class="row 1">
+                <div class="col">
+                    <div>
+                        <a href=""><img src="img/cfh-1.webp" alt="" width="250px"></a>
+                    </div>
+                    <div class="sell">
+                        <a href="">Phin Sữa Tươi Bánh Flan</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/cfh-2.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Trà Xanh Espresso Marble</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cà Phê VN -->
+            <div class="text pr">
+                <p>Cà Phê Việt Nam</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/đường đen sd.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Đường Đen Sữa Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/cfh sd.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">The Coffee House Sữa Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/cfsd.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Cà Phê Sữa Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cà Phê Máy -->
+            <div class="text pr">
+                <p>Cà Phê Máy</p>
+            </div>
+            <div class="row 3">
+                <div class="col">
+                    <a href=""><img src="img/Đường Đen Marble Latte.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Đường Đen Marble Latte</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Caramel Macchiato Đá.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Caramel Macchiato Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Caramel Macchiato Nóng.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Caramel Macchiato Nóng</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Americano Nóng.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Americano Nóng</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Cappuccino Đá.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Cappuccino Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Cappuccino Nóng.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Cappuccino Nóng</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold Brew -->
+            <div class="text pr">
+                <p>Cold Brew</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/Cold Brew Phúc Bồn Tử.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Cold Brew Phúc Bồn Tử</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Cold Brew Sữa Tươi.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Cold Brew Sữa Tươi</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Cold Brew Truyền Thống.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Cold Brew Truyền Thống</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Trà Trái Cây -->
+            <div class="text pr">
+                <p>Trà Trái Cây</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/Trà Long Nhãn Hạt Sen.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Trà Long Nhãn Hạt Sen</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Trà Đào Cam Sả - Đá.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Trà Đào Cam Sả - Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Trà Đào Cam Sả - Nóng.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Trà Đào Cam Sả - Nóng</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CloudTea -->
+            <div class="text pr">
+                <p>CloudTea</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/CloudTea Oolong Nướng Kem Dừa.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">CloudTea Oolong Nướng Kem Dừa</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/CloudTea Oolong Nướng Kem Cheese.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">CloudTea Oolong Nướng Kem Cheese</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/CloudTea Oolong Nướng Kem Dừa Đá Xay.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">CloudTea Oolong Nướng Kem Dừa Đá Xay</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div
+            >
+            <!-- Hi-Tea -->
+            <div class="text pr">
+                <p>Hi-Tea</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/Hi-Tea Đào Kombucha.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Hi-Tea Đào Kombucha</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Hi-Tea Yuzu Kombucha.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Hi-Tea Yuzu Kombucha</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Hi-Tea Phúc Bồn Tử Mandarin.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Hi-Tea Phúc Bồn Tử Mandarin</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trà Xanh Tây Bắc -->
+            <div class="text pr">
+                <p>Trà Xanh Tây Bắc</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/Trà Xanh Latte.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Trà Xanh Latte</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <a href=""><img src="img/frosty.jpg" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Frosty Trà Xanh</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/Trà Xanh Latte (Nóng).webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Trà Xanh Latte (Nóng)</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sô Cô La -->
+            <div class="text pr">
+                <p>Sô Cô La</p>
+            </div>
+            <div class="row 2">
+                <div class="col">
+                    <a href=""><img src="img/scl đá.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Chocolate Đá</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href=""><img src="img/TEA Vải.webp" alt="" width="250px"></a>
+                    <div class="sell">
+                        <a href="">Coffe House</a>
+                        <p>49.000 đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="ftn">
+            <div class="footer top">
+                <div class="ft">
+                    <h4>Giới Thiệu</h4>
+                    <a href="">Về chúng tôi</a>
+                    <a href="">Sản phẩm</a>
+                    <a href="">Khuyến mại</a>
+                    <a href="">Chuyện cà phê</a>
+                </div>
+                <div class="ft">
+                    <h4>Điều Khoản</h4>
+                    <a href="">Điều khoản sử dụng</a>
+                    <a href="">Chính sách và bảo mật</a>
+                    <a href="">Hướng dẫn xuất hóa đơn GTGT</a>
+                </div>
+                <div class="ft">
+                    <h4>Đặt Hàng </h4>
+                    <h4>Liên hệ: 1800.1800</h4>
+                    <p>Tầng 3-4, Hub Building P, FPT Polytechnic, Trịnh Văn Bô, TP.Hà Nội</p>
+                </div>
+                <div class="ft">
+                    <h4>Giới Thiệu</h4>
+                </div>
+
+            </div>
+            <hr>
+            <div class="footer bot">
+                <p>Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN <br>
+                    Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: TRẦN VĂN
+                    QUÝ<br>
+                    Địa chỉ: Tầng 3-4, Hub Building P, FPT Polytechnic, Trịnh Văn Bô, TP.Hà Nội. Điện thoại: (028) 7107
+                    8079 Email:
+                    hi@duanmot.fpt.edu.vn <br>
+                    © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
