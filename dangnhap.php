@@ -6,7 +6,7 @@
         </li>
     </ul>
 </div>
-<div class="user rht">
+<div class="">
     <?php if (isset($_SESSION['taikhoan'])) {
                 extract($_SESSION['taikhoan']);
             ?>
@@ -22,14 +22,17 @@
         <div class="box-right">
             <?php if($vaitro == 1){ ?>
             <div class="user">
-                Xin chào ADMIN: <?= $user ?>
+                Xin chào ADMIN: <?= $hovaten ?>
             </div>
             <?php }else if ($vaitro == 0){
-                    echo 'Xin chào : '.$user;
+                    echo 'Xin chào : '.$hovaten;
                 }?>
             <div class="pass">
                 <li>
                     <a href="index.php?act=quenmk" style="color: #000077;">Quên mật khẩu ?</a> <br>
+                </li>
+                <li>
+                    <a href="index.php?act=capnhattaikhoan" style="color: #000077;">Cập nhật tài khoản</a>
                 </li>
                 <?php
                     if ($vaitro == 1) {
@@ -79,10 +82,11 @@
                 <div class="text-note">
                     <p>Chúng tôi cam kết bảo mật thông tin của bạn</p>
                 </div>
+                <?php } ?>
             </form>
         </div>
     </div>
 
-    <?php } ?>
+
 </div>
 </div>
