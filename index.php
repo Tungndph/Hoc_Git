@@ -50,7 +50,20 @@ if(isset($_GET['act']) && $_GET['act'] != "") {
                 }
                 include './views/quenmatkhau.php';
                 break;
-
+        
+            case 'capnhattaikhoan':
+                if (isset($_POST['capnhat']) && $_POST['capnhat']) {
+                    $user = $_POST['user'];
+                    $pass = $_POST['password'];
+                    $email = $_POST['email'];
+                    $phone = $_POST['phone'];
+                    $id = $_POST['id'];
+                    edit_taikhoan($id,$user,$pass,$phone,$email);
+                    $thongbao = "* Cập nhật tài khoản thành công";
+                }
+            include './views/capnhattaikhoan.php';
+            break;
+        
             case "thoat";
                 session_unset();
                 header('Location: index.php');
