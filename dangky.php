@@ -23,6 +23,10 @@
         <hr width="100%" />
         <form action="index.php?act=dangky" method="post">
             <div class="title-login">
+                <p> Họ và tên <span style="color: red;">*</span> :</p>
+                <input type="text" name="hovaten" placeholder="Họ và tên">
+            </div>
+            <div class="title-login">
                 <p> Tài khoản <span style="color: red;">*</span> :</p>
                 <input type="text" placeholder="Tài khoản" name="user">
             </div>
