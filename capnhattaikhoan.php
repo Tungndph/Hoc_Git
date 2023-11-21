@@ -32,6 +32,10 @@
         <hr width="100%" />
         <form action="index.php?act=capnhattaikhoan" method="post">
             <div class="title-login">
+                <p> Họ và tên <span style="color: red;">*</span> :</p>
+                <input type="text" name="hovaten" value="<?=$hovaten?>">
+            </div>
+            <div class="title-login">
                 <p> Tài khoản <span style="color: red;">*</span> :</p>
                 <input type="text" name="user" value="<?=$taikhoan?>">
             </div>
